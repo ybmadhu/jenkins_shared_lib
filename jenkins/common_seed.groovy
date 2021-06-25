@@ -9,7 +9,7 @@ def jobName = "$reponame"
                     git {
                         remote {
                             url(gitRepoUrl)
-                            //credentials('credentailsID')
+                            credentials('github_credentials')
                         }
                         branches('master')
                         extensions {
