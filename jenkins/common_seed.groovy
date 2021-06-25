@@ -17,9 +17,6 @@ def jobName = "$reponame"
                         }
                     }
                 }
-                triggers {
-                  cron("H/1 * * * *")
-                 }
                 scriptPath("Jenkinsfile")
             }
         }
