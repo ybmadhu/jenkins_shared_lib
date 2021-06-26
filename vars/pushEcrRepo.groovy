@@ -6,7 +6,7 @@ pipeline {
    environment
     {
         VERSION = "${BUILD_NUMBER}"
-        PROJECT = ${projectName}
+        PROJECT = "${projectName}"
         IMAGE = "$PROJECT:$VERSION"
         ECRURL = 'https://336466435446.dkr.ecr.ap-south-1.amazonaws.com/${projectName}'
         ECRCRED = 'ecr:ap-south-1:awscredentials'
