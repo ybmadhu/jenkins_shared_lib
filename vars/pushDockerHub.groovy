@@ -1,5 +1,5 @@
 def call(Map pipelineParams){
-def projectName = "${params.ecrRepoName}"
+def projectName = pipelineParams.ecrRepoName
 
 pipeline {
  agent any
