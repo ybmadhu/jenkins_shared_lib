@@ -7,7 +7,7 @@ def jobName = "$reponame"
          pipelineTriggers {
           triggers {
             pollSCM {
-              scmpoll_spec('H/1 * * * *')
+              scmpoll_spec('*/1 * * * *')
               ignorePostCommitHooks(true)
             }
           }
